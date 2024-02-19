@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+.Title{
+    position: relative;
+
+}
+.animated-title {
+    
+    color: white;
+    font-size: 100px;
+    margin: 10;
+    width: 100%;
+    text-align: center;
+    font-family: 'Saira';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: textGlitch 3s ease-in-out infinite alternate;
+    z-index: 50;
+    position: relative;
+}
+
+.animated-element {
+    display: inline-block;
+    min-width: 0.2rem;
+    opacity: 0;
+    transform: translateY(2px);
+    animation: displayLetter 1s ease-in-out forwards alternate;
+    letter-spacing: 1px;
+    animation-delay: calc(0.05s * var(--i));
+}
+
+@keyframes displayLetter {
+	0% {
+    transform: translateY(2px);
+    color: black;
+    opacity: 0;
+	}
+  10% {
+    opacity: 1;
+    color: #0C55D8;
+  }
+  20% {
+    opacity: 0;
+    color: #084286;
+    transform: translateY(0px);
+  }
+  50% {
+    opacity: 1;
+    color: purple;
+    transform: translateY(1px);
+  }
+  60% {
+    opacity: 1;
+    color: #7701BC;
+    transform: translateY(1px);
+  }
+	100% {
+    transform: translateY(0);
+    color: white;
+    opacity: 1;
+	}
+}
+
+@keyframes textGlitch {
+    0% {
+        color: #7701BC;
+      opacity: 1;
+    }
+    94% {
+        color: #7701BC;
+      opacity: 1;
+      transform: translateX(0px);
+    }
+      95% {
+      opacity: 0.1;
+    }
+    96% {
+      opacity: 1;
+      color: #7701BC;
+      transform: translateX(1px);
+    }
+    97% {
+        color: #7701BC;
+      opacity: 0.1;
+    }
+    100% {
+        color: #7701BC;
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }

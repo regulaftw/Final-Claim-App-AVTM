@@ -1,0 +1,58 @@
+/* Styles for the container */
+.form-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 5vh; /* Minimum height to take full viewport height */
+  
+  padding: 1vh;
+  border-radius: 100px;
+}
+
+/* Styles for the form */
+.silver-claim-form {
+  align-items: center;
+  width: 500px; /* Adjust width as necessary */
+  padding: 50px;
+  
+  border-radius: 10px;
+  
+}
+
+/* Styles for form fields */
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.form-field input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px; /* Space between input fields */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles for the submit button */
+.submit-button {
+  margin-top: 50px;
+  margin-bottom: -50px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 100px;
+  background-color: #7701BC;
+  color: white;
+  cursor: pointer;
+  z-index: 10
+}
+
+.submit-button:hover {
+  background-color: #bf52ff;
+}
+
+.submit-button:active {
+  background-color: #1565C0;
+}

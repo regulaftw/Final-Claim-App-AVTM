@@ -1,0 +1,50 @@
+/* Centering the form */
+.centered-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 20vh;
+  border-radius: 100px;
+  
+}
+
+/* Styling the form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px;
+  border-radius: 100px;
+  z-index: 100;
+}
+
+/* Styling the buttons */
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #7701BC;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #c35aff;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Styling the result display */
+.result-display {
+  margin-top: 20px;
+}
